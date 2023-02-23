@@ -27,19 +27,19 @@ const Menu = () => {
           <ul>
             <li>
               <FaGuitar className={styles.icon} />
-              <a href="">Instrumentos Musicais</a>
+              <a href="/instrumentMusic">Instrumentos Musicais</a>
             </li>
             <li>
               <FaHeadphones className={styles.icon} />
-              <a href="">Recomendações</a>
+              <a href="/recomendations">Recomendações</a>
             </li>
             <li>
               <FaMusic className={styles.icon} />
-              <a href="">Quero Aprender</a>
+              <a href="/learn">Quero Aprender</a>
             </li>
             <li>
               <FaMicrophone className={styles.icon} />
-              <a href="">Artistas</a>
+              <a href="/artist">Artistas</a>
             </li>
           </ul>
         </div>
@@ -48,19 +48,19 @@ const Menu = () => {
       <ul className={styles.menu}>
         <li>
           <FaGuitar className={styles.icon} />
-          <a href="">Instrumentos Musicais</a>
+          <a href="instrumentMusic">Instrumentos Musicais</a>
         </li>
         <li>
           <FaHeadphones className={styles.icon} />
-          <a href="">Recomendações</a>
+          <a href="recomendations">Recomendações</a>
         </li>
         <li>
           <FaMusic className={styles.icon} />
-          <a href="">Quero Aprender</a>
+          <a href="learn">Quero Aprender</a>
         </li>
         <li>
           <FaMicrophone className={styles.icon} />
-          <a href="">Artistas</a>
+          <a href="artist">Artistas</a>
         </li>
       </ul>
     </div>

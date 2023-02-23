@@ -1,0 +1,77 @@
+.container {
+  position: absolute;
+  top: -330px;
+  left: 550px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .userdata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    img {
+      position: relative;
+      bottom: 70px;
+      right: 30px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .welcome {
+      position: relative;
+      bottom: 90px;
+    }
+
+    .email {
+      position: relative;
+      bottom: 60px;
+      right: 125px;
+      color: var(--gray-300);
+    }
+  }
+
+  .login {
+    position: relative;
+    left: 650px;
+    bottom: 70px;
+
+    .createAccount {
+      position: relative;
+      right: 50px;
+      width: 150px;
+      padding: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: var(--green-500);
+      background-color: transparent;
+      border: 1px solid var(--green-500);
+      transition: all 0.5s;
+
+      &:hover {
+        filter: brightness(0.8)
+      }
+    }
+
+    .signin {
+      position: relative;
+      right: 10px;
+      width: 150px;
+      padding: 8px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: var(--gray-900);
+      background: var(--green-500);
+      border: none;
+      transition: background-color 0.5s;
+
+      &:hover {
+        filter: brightness(0.8)
+      }
+    }
+  }
+}

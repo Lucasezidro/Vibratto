@@ -1,17 +1,49 @@
-import React from 'react';
-import styles from './menu.module.scss'
-import { FaMusic, FaMicrophone, FaGuitar, FaHeadphones } from 'react-icons/fa'
-import { AiOutlineMenu } from 'react-icons/ai'
+import React, { useState } from "react";
+import styles from "./menu.module.scss";
+import { FaMusic, FaMicrophone, FaGuitar, FaHeadphones } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 
-const Menu: React.FC = () => {
+const Menu = () => {
+  const [showResponsiveMenu, setShowResponsiveMenu] = useState<boolean>(false);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Vibratto</h1>
       <div className={styles.responsiveMenu}>
-        <button>
+        <button onClick={() => setShowResponsiveMenu(true)}>
           <AiOutlineMenu />
         </button>
       </div>
+
+      {showResponsiveMenu && (
+        <div className={styles.showMenu}>
+          <button 
+            className={styles.closeMenu}
+            onClick={() => setShowResponsiveMenu(false)}
+          >
+            X
+          </button>
+
+          <ul>
+            <li>
+              <FaGuitar className={styles.icon} />
+              <a href="">Instrumentos Musicais</a>
+            </li>
+            <li>
+              <FaHeadphones className={styles.icon} />
+              <a href="">Recomendações</a>
+            </li>
+            <li>
+              <FaMusic className={styles.icon} />
+              <a href="">Quero Aprender</a>
+            </li>
+            <li>
+              <FaMicrophone className={styles.icon} />
+              <a href="">Artistas</a>
+            </li>
+          </ul>
+        </div>
+      )}
 
       <ul className={styles.menu}>
         <li>
@@ -32,7 +64,7 @@ const Menu: React.FC = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default Menu;

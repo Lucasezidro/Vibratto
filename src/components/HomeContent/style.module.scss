@@ -1,7 +1,21 @@
 .cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 100px;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+@media (max-width: 1270px) {
+  .cards {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+  }
 }

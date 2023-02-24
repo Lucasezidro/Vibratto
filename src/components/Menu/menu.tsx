@@ -17,7 +17,7 @@ const Menu = () => {
 
       {showResponsiveMenu && (
         <div className={styles.showMenu}>
-          <button 
+          <button
             className={styles.closeMenu}
             onClick={() => setShowResponsiveMenu(false)}
           >
@@ -42,6 +42,11 @@ const Menu = () => {
               <a href="/artist">Artistas</a>
             </li>
           </ul>
+
+          <div className={styles.responsivelogin}>
+            <button className={styles.responsivecreateAccount}>Criar Conta</button>
+            <button className={styles.responsivesignin}>Entrar</button>
+          </div>
         </div>
       )}
 

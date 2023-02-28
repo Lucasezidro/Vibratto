@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+
+  button {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 150px;
+    padding: 7px;
+    border: 1px solid #FDE74C;
+    border-radius: 8px;
+    font-weight: 500;
+    background: transparent;
+    color: var(--white);
+    transition: all 0.5s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    color: #FDE74C;
+    font-family: 'Ubuntu';
+  }
+
+  .search {
+    width: 700px;
+    margin-bottom: 40px;
+    padding: 10px;
+    font-family: 'Ubuntu';
+    font-weight: 900;
+    background: transparent;
+    color: var(--gray-300);
+    border: 1px solid #FDE74C;
+    box-shadow: 1px 1px 10px #FDE74C;
+    border-radius: 12px;
+  }
+
+  .filteredResults {
+    width: 700px;
+    height: max-content;
+    gap: 50px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+      background: var(--gray-800);
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px #FDE74C;
+      
+      span {
+        text-align: center;
+        color: var(--gray-300);
+
+        strong {
+          color: var(--purple-500);
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

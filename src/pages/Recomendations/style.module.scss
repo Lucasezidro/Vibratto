@@ -1,0 +1,22 @@
+.container {
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 250px;
+      opacity: .8;
+    }
+
+    h1 {
+      position: relative;
+      margin-top: 10px;
+      color: var(--purple-500);
+    }
+
+  }
+}
